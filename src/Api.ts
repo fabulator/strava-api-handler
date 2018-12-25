@@ -13,6 +13,9 @@ import { ActivityFilters } from './types/ActivityFilters';
 import * as STREAM from './streams';
 import * as SCOPE from './scopes';
 
+// @ts-ignore
+global.FormData = FormData;
+
 type Scope = 'read' | 'read_all' | 'profile:read_all' | 'profile:write' | 'activity:read' | 'activity:read_all' | 'activity:write';
 type Prompt = 'force' | 'auto';
 type Athlete = {

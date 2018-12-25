@@ -50,8 +50,20 @@ export default class Activity<Id extends (number | undefined) = any, ApiSource e
         });
     }
 
+    protected clone(extension: Partial<Constructor<number | undefined, ApiSource>>): any {
+        // @ts-ignore
+        return new Activity({
+            ...this.toObject(),
+            ...extension,
+        });
+    }
+
     public getId(): number | undefined {
         return this.id;
+    }
+
+    public getTypeName() {
+        return this.typeId;
     }
 
     public setId(id: number): Activity<number, ApiActivity>
