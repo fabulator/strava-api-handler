@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.2.0] 2019-01-15
+### Added
+- Gear handling
+
 ## [0.1.2] 2018-12-25
 ### Merge branch 'master' of github.com
 - fabulator/strava-api-handler

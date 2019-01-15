@@ -1,6 +1,6 @@
 {
   "name": "strava-api-handler",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Unofficial handler for Strava API",
   "main": "dist/index.js",
   "jsnext:main": "dist/index.esm.js",
