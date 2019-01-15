@@ -9,6 +9,7 @@ interface Constructor<Id, ApiSource> extends TYPES.WorkoutConstructor {
     id: Id,
     source: ApiSource,
     description?: string,
+    gearId?: string,
 }
 
 export default class Activity<Id extends (number | undefined) = any, ApiSource extends (ApiActivity | undefined) = any> extends Workout {
@@ -20,12 +21,15 @@ export default class Activity<Id extends (number | undefined) = any, ApiSource e
 
     protected description?: string;
 
+    protected gearId?: string;
+
     public constructor(options: Constructor<Id, ApiSource>) {
         super(options);
         this.typeId = options.typeId;
         this.id = options.id;
         this.source = options.source;
         this.description = options.description;
+        this.gearId = options.gearId;
     }
 
     public static ACTIVITY_TYPES = ACTIVITY_TYPES;
@@ -47,6 +51,7 @@ export default class Activity<Id extends (number | undefined) = any, ApiSource e
             title: activity.name,
             source: activity,
             isCommute: activity.commute,
+            gearId: activity.gear_id,
         });
     }
 
@@ -56,6 +61,17 @@ export default class Activity<Id extends (number | undefined) = any, ApiSource e
             ...this.toObject(),
             ...extension,
         });
+    }
+
+    public toObject(): Constructor<Id, ApiSource> {
+        return {
+            ...super.toObject(),
+            typeId: this.typeId,
+            id: this.id,
+            source: this.source,
+            description: this.description,
+            gearId: this.gearId,
+        };
     }
 
     public getId(): number | undefined {
@@ -83,6 +99,14 @@ export default class Activity<Id extends (number | undefined) = any, ApiSource e
         return this.description;
     }
 
+    public getGearId() {
+        return this.gearId;
+    }
+
+    public setGearId(gearId?: string): Activity<Id, ApiActivity> {
+        return this.clone({ gearId });
+    }
+
     public toApiObject() {
         const distance = this.getDistance();
 
@@ -91,6 +115,7 @@ export default class Activity<Id extends (number | undefined) = any, ApiSource e
             start_date_local: this.getStart().toISO(),
             elapsed_time: this.getDuration().as('seconds'),
             commute: this.isCommute ? 1 : 0,
+            gear_id: this.getGearId() || 'none',
             ...(this.getTitle() ? { name: this.getTitle() } : {}),
             ...(distance != null ? { distance: distance.toNumber('m') } : {}),
             ...(this.getDescription() != null ? { description: this.getDescription() } : {}),

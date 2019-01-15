@@ -45,7 +45,7 @@
     "@types/form-data": "^2.2.1"
   },
   "dependencies": {
-    "fitness-models": "^0.2.0",
+    "fitness-models": "^0.2.1",
     "form-data": "^2.3.3",
     "luxon": "^1.8.3",
     "mathjs": "^5.2.3",
