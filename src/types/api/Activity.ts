@@ -1,4 +1,4 @@
-export type Activity = {
+export interface Activity {
     id: number,
     resource_state: number,
     external_id: string,
@@ -61,9 +61,9 @@ export type Activity = {
     suffer_score: number | null,
     description: string,
     calories: number,
-    segment_efforts: Array<Object>,
-    splits_metric: Array<Object>,
-    laps: Array<Object>,
+    segment_efforts: Record<string, any>[],
+    splits_metric: Record<string, any>[],
+    laps: Record<string, any>[],
     gear: {
         id: string,
         primary: boolean,
@@ -72,10 +72,10 @@ export type Activity = {
         distance: number,
     },
     partner_brand_tag: string | null,
-    photos: Object,
-    highlighted_kudosers: Array<Object>,
+    photos: Record<string, any>,
+    highlighted_kudosers: Record<string, any>[],
     device_name: string,
     embed_token: string,
     segment_leaderboard_opt_out: boolean,
     leaderboard_opt_out: boolean,
-};
+}

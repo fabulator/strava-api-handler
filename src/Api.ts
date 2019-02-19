@@ -18,7 +18,7 @@ global.FormData = FormData;
 
 type Scope = 'read' | 'read_all' | 'profile:read_all' | 'profile:write' | 'activity:read' | 'activity:read_all' | 'activity:write';
 type Prompt = 'force' | 'auto';
-type Athlete = {
+interface Athlete {
     id: number,
     username: string,
     resource_state: number,
@@ -37,21 +37,21 @@ type Athlete = {
     friend: string | undefined,
     follower: string | undefined,
     email: string,
-};
+}
 
-type Token = {
+interface Token {
     access_token: string,
     token_type: string,
     athlete: Athlete,
-};
+}
 
-type UploadStatus = {
+interface UploadStatus {
     id: number,
     external_id: string,
     error: string | undefined,
     status: string,
     activity_id: number | undefined,
-};
+}
 
 function base64Encode(string: string): string {
     if (typeof btoa !== 'undefined') {
@@ -94,7 +94,7 @@ export default class Api extends ApiBase<ApiResponseType<any>> {
 
     public getLoginUrl(
         redirectUri: string,
-        scope: Array<Scope> = ['read'],
+        scope: Scope[] = ['read'],
         approvalPrompt?: Prompt,
         state?: string,
     ): string {
@@ -109,15 +109,13 @@ export default class Api extends ApiBase<ApiResponseType<any>> {
         return `https://www.strava.com/oauth/authorize${ApiBase.convertParametersToUrl(parameters)}`;
     }
 
-    public async requestAccessToken(code: string): Promise<Token> {
-        const parameters = {
-            client_id: this.clientId,
-            client_secret: this.secret,
-            code,
-        };
-
-        const response = await this.request(
-            `oauth/token${ApiBase.convertParametersToUrl(parameters)}`,
+    protected async requestToken(parameters: Record<string, string>): Promise<Token> {
+        const { data } = await this.request(
+            `oauth/token${ApiBase.convertParametersToUrl({
+                client_id: this.clientId,
+                client_secret: this.secret,
+                ...parameters,
+            })}`,
             'POST',
             {},
             {
@@ -126,9 +124,17 @@ export default class Api extends ApiBase<ApiResponseType<any>> {
             },
         );
 
-        this.setAccessToken(response.data.access_token);
+        this.setAccessToken(data.access_token);
 
-        return response.data;
+        return data;
+    }
+
+    public requestAccessToken(code: string): Promise<Token> {
+        return this.requestToken({ code });
+    }
+
+    public refreshToken(token: string): Promise<Token> {
+        return this.requestToken({ grant_type: 'refresh_token', refresh_token: token });
     }
 
     public async getActivity(id: number) {
@@ -136,7 +142,7 @@ export default class Api extends ApiBase<ApiResponseType<any>> {
         return Activity.getFromApi(data);
     }
 
-    public async getStream(id: number, streams: Array<STREAM.Stream> = []): Promise<Array<any>> {
+    public async getStream(id: number, streams: STREAM.Stream[] = []): Promise<any[]> {
         const { data } = await this.get(`api/v3/activities/${id}/streams`, {
             keys: streams.join(','),
             key_by_type: false,
@@ -170,7 +176,7 @@ export default class Api extends ApiBase<ApiResponseType<any>> {
     public async processActivities(
         filter: ActivityFilters = {},
         processor: (workout: Activity<number, ApiActivity>) => Promise<Activity<number, ApiActivity>>,
-    ): Promise<Array<Activity<number, ApiActivity>>> {
+    ): Promise<Activity<number, ApiActivity>[]> {
         const activities = await this.getActivities(filter);
 
         const processorPromises = activities.map((activity: Activity<number, ApiActivity>) => {

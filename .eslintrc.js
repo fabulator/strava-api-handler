@@ -3,11 +3,8 @@ module.exports = {
         '@socifi',
 
     ],
-    plugins: [
-        'typescript', // fix for Webstorm, otherwise it does not parse ts files
-    ],
     rules: {
         camelcase: 0,
-        'no-dupe-class-members': 0, // general for typescript
+        '@typescript-eslint/camelcase': 0,
     },
 };
