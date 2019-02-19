@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.3.0] 2019-02-19
+### Added
+- Refreshing token
+
 ## [0.2.0] 2019-01-15
 ### Added
 - Gear handling
