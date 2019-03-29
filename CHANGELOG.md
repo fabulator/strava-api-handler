@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.4.0] 2019-03-29
+### Changed
+- Updated dependencies
+
 ## [0.3.0] 2019-02-19
 ### Added
 - Refreshing token
