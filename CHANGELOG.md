@@ -1,6 +1,12 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.6.0] 2019-10-24
+### Changed
+- [7bcf263](https://github.com/fabulator/strava-api-handler/commit/7bcf2638bf12ceb7b21b8de5f25f800ba7e950fc) Update dev dependency @socifi/rollup-config to ^2.2.2
+- [351d415](https://github.com/fabulator/strava-api-handler/commit/351d41546a2f1720e388819bb6052d504c90a2ea) Update dev dependency semantic-release-config-fabulator to ^1.3.2 
+- [8b17b67](https://github.com/fabulator/strava-api-handler/commit/8b17b67714e364406e39650fbdf140a7b8924fb4) Update dev dependency cross-fetch to ^3.0.4 
+
 ## [0.5.0] 2019-10-24
 ### Changed
 - [c516a51](https://github.com/fabulator/strava-api-handler/commit/c516a51c74f401f70dc210b4195acd47d1a62157) Update dependencies.
