@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.5.0] 2019-10-24
+### Changed
+- [c516a51](https://github.com/fabulator/strava-api-handler/commit/c516a51c74f401f70dc210b4195acd47d1a62157) Update dependencies.
+
 ## [0.4.0] 2019-03-29
 ### Changed
 - Updated dependencies
