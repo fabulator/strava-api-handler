@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [0.7.0] 2019-10-27
+### Changed
+- [14b1905](https://github.com/fabulator/strava-api-handler/commit/14b1905c84b8a0af5b56d9f0ce5327bce1f9ee0e) Update dependency fitness-models to ^0.6.0
+
 ## [0.6.0] 2019-10-24
 ### Changed
 - [7bcf263](https://github.com/fabulator/strava-api-handler/commit/7bcf2638bf12ceb7b21b8de5f25f800ba7e950fc) Update dev dependency @socifi/rollup-config to ^2.2.2
