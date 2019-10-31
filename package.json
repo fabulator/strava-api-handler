@@ -42,7 +42,7 @@
     "dependencies": {
         "@types/luxon": "^1.15.2",
         "@types/mathjs": "^6.0.2",
-        "fitness-models": "^0.6.0",
+        "fitness-models": "^0.7.0",
         "form-data": "^2.5.1",
         "luxon": "^1.19.3",
         "mathjs": "^6.2.3",
