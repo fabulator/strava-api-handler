@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [1.1.0] 2019-11-12
+### Changed
+- [7fc7fa5](https://github.com/fabulator/strava-api-handler/commit/7fc7fa540717465db8aac418c92820187a30f0d9) Update dependency fitness-models to v0.10.2
+
 ## [1.0.0] 2019-11-12
 ### Changed
 - [51f5f6d](https://github.com/fabulator/strava-api-handler/commit/51f5f6d4a07f96125e50114b56fdc0d239dc72ad) Update dependency form-data to v3 BREAKING (#10)
