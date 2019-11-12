@@ -43,7 +43,7 @@
         "@types/luxon": "^1.15.2",
         "@types/mathjs": "^6.0.2",
         "fitness-models": "^0.10.0",
-        "form-data": "^2.5.1",
+        "form-data": "^3.0.0",
         "luxon": "^1.21.1",
         "mathjs": "^6.2.3",
         "rest-api-handler": "^2.4.1"
