@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [1.9.0] 2019-11-29
+### Changed
+- [1c32aea](https://github.com/fabulator/strava-api-handler/commit/1c32aea02930bd63a3ed7f657711c4becbe8c2bf) Update dependency luxon to v1.21.3
+
 ## [1.8.0] 2019-11-25
 ### Changed
 - [1cad259](https://github.com/fabulator/strava-api-handler/commit/1cad2590928aa07d1f09b92b89cab64b63f45a8e) Update dependency rest-api-handler to v2.6.0
