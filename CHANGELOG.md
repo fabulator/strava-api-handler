@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [1.13.0] 2019-12-21
+### Changed
+- [e59038e](https://github.com/fabulator/strava-api-handler/commit/e59038ebfc6f3385f0cb8eabef5e128389086cd3) Update dependency rest-api-handler to v2.9.0
+
 ## [1.12.0] 2019-12-10
 ### Changed
 - [01fd50d](https://github.com/fabulator/strava-api-handler/commit/01fd50d28e9e9422fac6f64570399e35b3ab0170) Update dependency rest-api-handler to v2.8.0
