@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [1.27.0] 2020-02-02
+### Changed
+- [e2a6fef](https://github.com/fabulator/strava-api-handler/commit/e2a6fef2e632cab1da801827cb65d76a13c3c5d5) Update dependency mathjs to v6.6.0
+
 ## [1.26.0] 2020-02-01
 ### Changed
 - [03196ea](https://github.com/fabulator/strava-api-handler/commit/03196eada425b9a21fec668aec8a53d36b8830b4) Update dependency rest-api-handler to v2.12.0
