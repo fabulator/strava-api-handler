@@ -1,6 +1,11 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [1.29.0] 2020-02-27
+### Changed
+- [65fb1f0](https://github.com/fabulator/strava-api-handler/commit/65fb1f0db050c077d4364280a37e3833c26f9784) Update dependency mathjs to v6.6.1
+- [1a9f500](https://github.com/fabulator/strava-api-handler/commit/1a9f500a5c1dc6c5777d1483e69ee6dd472fb966) Update dev dependency @socifi/eslint-config to v2.10.2 
+
 ## [1.28.0] 2020-02-03
 ### Changed
 - [675dfe0](https://github.com/fabulator/strava-api-handler/commit/675dfe07aed88b3919e09cb972eecf0d7f2c7818) Update dependency fitness-models to ^0.21.0
