@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [1.34.0] 2020-03-24
+### Changed
+- [cc23735](https://github.com/fabulator/strava-api-handler/commit/cc23735abf9ee16e0da31282938063e1f446869c) Update dependency @types/luxon to v1.22.0
+
 ## [1.33.0] 2020-03-23
 ### Changed
 - [c5993aa](https://github.com/fabulator/strava-api-handler/commit/c5993aa88d7a7fa240511d03284c8583048da3c2) Update dependency rest-api-handler to v2.14.0
