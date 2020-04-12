@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [1.43.0] 2020-04-12
+### Changed
+- [36117d2](https://github.com/fabulator/strava-api-handler/commit/36117d2ba14fd11b8e359489005934220e01e21d) Update dependency mathjs to v6.6.3
+
 ## [1.42.0] 2020-04-05
 ### Changed
 - [426b5ab](https://github.com/fabulator/strava-api-handler/commit/426b5ab1d0708853ede1e90efc3bbd0da7f00fa7) Update dependency fitness-models to ^0.29.0
