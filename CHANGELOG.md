@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [1.50.0] 2020-05-06
+### Changed
+- [30cfbd4](https://github.com/fabulator/strava-api-handler/commit/30cfbd41b9f554c009bd4565820364e2f8a50664) Update dependency mathjs to v6.6.5
+
 ## [1.49.0] 2020-05-05
 ### Changed
 - [a360f21](https://github.com/fabulator/strava-api-handler/commit/a360f21bd57457e36a08e227680f6dda121ab0c1) Update dependency luxon to v1.24.1
