@@ -1,6 +1,11 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## [3.7.0] 2020-06-22
+### Changed
+- [b5584f4](https://github.com/fabulator/strava-api-handler/commit/b5584f4c41d79556b576eeccfbe24cfeefc4982b) Update dependency rest-api-handler to v2.18.0
+- [203057a](https://github.com/fabulator/strava-api-handler/commit/203057ad57e718249a799d5654bbbfea82e7ae89) Update dev dependency cross-fetch to v3.0.5 
+
 ## [3.6.0] 2020-06-03
 ### Changed
 - [32b8218](https://github.com/fabulator/strava-api-handler/commit/32b8218f68b11e49c33d3d76b75e2036adfdebaa) Update dependency fitness-models to v2.3.0
