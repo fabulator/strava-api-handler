@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## v4.0.0 (2020-07-18)
+### Refactored
+- [50f6896](https://github.com/fabulator/strava-api-handler/commit/50f689603a4a0dac701a3c978ab04c661c4427fb) Use new building engine, changed types structure BREAKING
+
 ## [3.17.0] 2020-07-18
 ### Changed
 - [68199b6](https://github.com/fabulator/strava-api-handler/commit/68199b6e6c143d2f9c44e4fbeafba589cfe59c0e) Update dependency fitness-models to v2.9.0
