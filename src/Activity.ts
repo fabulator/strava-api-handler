@@ -70,7 +70,7 @@ export default class Activity<Id extends number | undefined = any, ApiSource ext
         };
     }
 
-    public getId(): number | undefined {
+    public getId() {
         return this.id;
     }
 
