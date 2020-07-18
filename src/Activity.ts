@@ -1,18 +1,17 @@
-import { Workout, TYPES } from 'fitness-models';
+import { Workout, WorkoutConstructor } from 'fitness-models';
 import { DateTime, Duration } from 'luxon';
-import { unit } from 'mathjs';
-import { Activity as ApiActivity } from './types/api/Activity';
-import * as ACTIVITY_TYPES from './activity-types';
+import { unit } from './helpers';
+import { ApiActivity } from './types/api/Activity';
 
-interface Constructor<Id, ApiSource> extends TYPES.WorkoutConstructor {
-    typeId: string,
-    id: Id,
-    source: ApiSource,
-    description?: string,
-    gearId?: string,
+interface Constructor<Id, ApiSource> extends WorkoutConstructor {
+    description?: string;
+    gearId?: string;
+    id: Id;
+    source: ApiSource;
+    typeId: string;
 }
 
-export default class Activity<Id extends (number | undefined) = any, ApiSource extends (ApiActivity | undefined) = any> extends Workout {
+export default class Activity<Id extends number | undefined = any, ApiSource extends ApiActivity | undefined = any> extends Workout {
     protected typeId: string;
 
     protected id: Id;
@@ -31,8 +30,6 @@ export default class Activity<Id extends (number | undefined) = any, ApiSource e
         this.description = options.description;
         this.gearId = options.gearId;
     }
-
-    public static ACTIVITY_TYPES = ACTIVITY_TYPES;
 
     public static getFromApi(activity: ApiActivity): Activity<number, ApiActivity> {
         const { distance } = activity;
@@ -55,12 +52,11 @@ export default class Activity<Id extends (number | undefined) = any, ApiSource e
         });
     }
 
-    protected clone(extension: Partial<Constructor<number | undefined, ApiSource>>): any {
-        // @ts-ignore
+    protected clone(extension: Partial<Constructor<number | undefined, ApiSource>>): this {
         return new Activity({
             ...this.toObject(),
             ...extension,
-        });
+        }) as this;
     }
 
     public toObject(): Constructor<Id, ApiSource> {
@@ -82,12 +78,11 @@ export default class Activity<Id extends (number | undefined) = any, ApiSource e
         return this.typeId;
     }
 
-    public setId(id: number): Activity<number, ApiActivity>
+    public setId(id: number): Activity<number, ApiSource>;
 
-    public setId(id: undefined): Activity<undefined, ApiActivity>
+    public setId(id: undefined): Activity<undefined, ApiSource>;
 
-    public setId(id: number | undefined) {
-        // @ts-ignore
+    public setId(id: undefined | number): Activity<number | undefined, ApiSource> {
         return this.clone({ id });
     }
 
@@ -103,7 +98,7 @@ export default class Activity<Id extends (number | undefined) = any, ApiSource e
         return this.gearId;
     }
 
-    public setGearId(gearId?: string): Activity<Id, ApiActivity> {
+    public setGearId(gearId?: string) {
         return this.clone({ gearId });
     }
 

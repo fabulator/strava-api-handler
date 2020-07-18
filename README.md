@@ -31,13 +31,13 @@ import 'cross-fetch/polyfill';
 You need to use oAuth. First get login url and then autentize through the code.
 
 ```javascript
-const { Api } = require('./../dist');
+const { Api, ApiScope } = require('./../dist');
 
 (async () => {
     const api = new Api('CLIENT_ID', 'CLIENT_SECRET');
 
     // generate login link
-    console.log(api.getLoginUrl('http://developers.strava.com', [Api.SCOPE.READ_ALL]));
+    console.log(api.getLoginUrl('http://developers.strava.com', [ApiScope.READ_ALL]));
 
     // use it and get code
     const token = await api.requestToken({ code: 'AUTH_CODE', grant_type: 'authorization_code' });

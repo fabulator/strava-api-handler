@@ -1,81 +1,82 @@
-export interface Activity {
-    id: number,
-    resource_state: number,
-    external_id: string,
-    upload_id: number,
+/* eslint-disable typescript-sort-keys/interface */
+export interface ApiActivity {
+    achievement_count: number;
     athlete: {
-        id: number,
-        resource_state: number,
-    },
-    name: string,
-    distance: number,
-    moving_time: number,
-    elapsed_time: number,
-    total_elevation_gain: number,
-    type: string,
-    start_date: string,
-    start_date_local: string,
-    timezone: string,
-    utc_offset: number,
-    start_latlng: [ number, number ],
-    end_latlng: [ number, number ],
-    location_city: string | null,
-    location_state: string | null,
-    location_country: string,
-    start_latitude: number,
-    start_longitude: number,
-    achievement_count: number,
-    kudos_count: number,
-    comment_count: number,
-    athlete_count: number,
-    photo_count: number,
+        id: number;
+        resource_state: number;
+    };
+    athlete_count: number;
+    average_cadence: number;
+    average_speed: number;
+    average_temp: number;
+    average_watts: number;
+    calories: number;
+    comment_count: number;
+    commute: boolean;
+    description: string;
+    device_name: string;
+    device_watts: boolean;
+    distance: number;
+    elapsed_time: number;
+    elev_high: number;
+    elev_low: number;
+    embed_token: string;
+    end_latlng: [number, number];
+    external_id: string;
+    flagged: boolean;
+    from_accepted_tag: boolean;
+    id: number;
+    kudos_count: number;
+    utc_offset: number;
+    has_kudoed: boolean;
+    highlighted_kudosers: Record<string, unknown>[];
     map: {
-        id: number,
-        polyline: string,
-        resource_state: number,
-        summary_polyline: string,
-    },
-    trainer: boolean,
-    commute: boolean,
-    manual: boolean,
-    private: boolean,
-    flagged: boolean,
-    gear_id: string,
-    from_accepted_tag: boolean,
-    average_speed: number,
-    max_speed: number,
-    average_cadence: number,
-    average_temp: number,
-    average_watts: number,
-    weighted_average_watts: number,
-    kilojoules: number,
-    device_watts: boolean,
-    has_heartrate: boolean,
-    max_watts: number,
-    elev_high: number,
-    elev_low: number,
-    pr_count: number,
-    total_photo_count: number,
-    has_kudoed: boolean,
-    workout_type: number,
-    suffer_score: number | null,
-    description: string,
-    calories: number,
-    segment_efforts: Record<string, any>[],
-    splits_metric: Record<string, any>[],
-    laps: Record<string, any>[],
+        id: number;
+        polyline: string;
+        resource_state: number;
+        summary_polyline: string;
+    };
+    kilojoules: number;
+    total_elevation_gain: number;
+    laps: Record<string, unknown>[];
+    private: boolean;
+    start_latitude: number;
+    location_country: string;
+    start_longitude: number;
+    manual: boolean;
+    max_speed: number;
+    upload_id: number;
+    name: string;
+    timezone: string;
+    weighted_average_watts: number;
+    trainer: boolean;
+    photo_count: number;
+    has_heartrate: boolean;
+    max_watts: number;
+    start_latlng: [number, number];
+    location_state: string | null;
+    pr_count: number;
+    total_photo_count: number;
+    splits_metric: Record<string, unknown>[];
+    start_date: string;
+    gear_id: string;
+    type: string;
+    moving_time: number;
+    segment_efforts: Record<string, unknown>[];
+    suffer_score: number | null;
+    resource_state: number;
     gear: {
-        id: string,
-        primary: boolean,
-        name: string,
-        resource_state: number,
-        distance: number,
-    },
-    partner_brand_tag: string | null,
-    photos: Record<string, any>,
-    highlighted_kudosers: Record<string, any>[],
-    device_name: string,
-    embed_token: string,
-    segment_leaderboard_opt_out: boolean,
-    leaderboard_opt_out: boolean,
+        distance: number;
+        id: string;
+        name: string;
+        primary: boolean;
+        resource_state: number;
+    };
+    partner_brand_tag: string | null;
+    photos: Record<string, unknown>;
+    start_date_local: string;
+    workout_type: number;
+    location_city: string | null;
+    segment_leaderboard_opt_out: boolean;
+    leaderboard_opt_out: boolean;
 }
