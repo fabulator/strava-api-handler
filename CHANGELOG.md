@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## v4.0.1 (2020-07-18)
+### Fixed
+- [74e2d43](https://github.com/fabulator/strava-api-handler/commit/74e2d4302304c5d44febb51d9010098079253dee) Activity get ID return type
+
 ## v4.0.0 (2020-07-18)
 ### Refactored
 - [50f6896](https://github.com/fabulator/strava-api-handler/commit/50f689603a4a0dac701a3c978ab04c661c4427fb) Use new building engine, changed types structure BREAKING
