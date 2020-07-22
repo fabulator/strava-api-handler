@@ -1,6 +1,11 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## v4.1.0 (2020-07-22)
+### Changed
+- [5ee322e](https://github.com/fabulator/strava-api-handler/commit/5ee322e63dbad68c1e3e6cc348e812d6eff06e09) Update dependency @types/luxon to v1.24.2
+- [1dfd5e9](https://github.com/fabulator/strava-api-handler/commit/1dfd5e986e882730ed5d818b658bfaac7adfeea7) Update dev dependency eslint-config-fabulator to v1.0.2 
+
 ## v4.0.1 (2020-07-18)
 ### Fixed
 - [74e2d43](https://github.com/fabulator/strava-api-handler/commit/74e2d4302304c5d44febb51d9010098079253dee) Activity get ID return type
