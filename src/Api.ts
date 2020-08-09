@@ -188,7 +188,7 @@ export default class Api extends ApiBase<ApiResponseType<any>> {
     // eslint-disable-next-line complexity
     public async uploadActivity(
         activity: Activity,
-        fileContent: string,
+        fileContent: string | Buffer,
         externalId: string | number,
         dataType = 'gpx',
     ): Promise<UploadStatus> {
