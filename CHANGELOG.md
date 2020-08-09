@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## v4.4.0 (2020-08-09)
+### Added
+- [e500d23](https://github.com/fabulator/strava-api-handler/commit/e500d237c459dc9217bb61266986b657706520b9) Support for fit uploads
+
 ## v4.3.0 (2020-07-24)
 ### Changed
 - [0cf087f](https://github.com/fabulator/strava-api-handler/commit/0cf087fa584a802ddf514201ee860d64bddfd6f0) Update dependency @types/luxon to v1.24.3
