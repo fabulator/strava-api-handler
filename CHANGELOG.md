@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## v4.4.1 (2020-09-12)
+### Fixed
+- [3b0e659](https://github.com/fabulator/strava-api-handler/commit/3b0e6599df104e16c24c3d52165949b29a530d7e) Security lock update
+
 ## v4.4.0 (2020-08-09)
 ### Added
 - [e500d23](https://github.com/fabulator/strava-api-handler/commit/e500d237c459dc9217bb61266986b657706520b9) Support for fit uploads
