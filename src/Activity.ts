@@ -32,23 +32,23 @@ export default class Activity<Id extends number | undefined = any, ApiSource ext
     }
 
     public static getFromApi(activity: ApiActivity): Activity<number, ApiActivity> {
-        const { distance } = activity;
+        const { commute, gear_id, distance, start_date, timezone, id, elapsed_time, type, calories, name } = activity;
 
         return new Activity({
-            start: DateTime.fromISO(activity.start_date, {
-                zone: activity.timezone.split(' ')[1],
+            start: DateTime.fromISO(start_date, {
+                zone: timezone.split(' ')[1],
             }),
-            id: activity.id,
+            id,
             duration: Duration.fromObject({
-                seconds: activity.elapsed_time,
+                seconds: elapsed_time,
             }),
-            typeId: activity.type,
-            calories: activity.calories,
+            typeId: type,
+            calories,
             distance: distance != null ? unit(distance, 'm') : undefined,
-            title: activity.name,
+            title: name,
             source: activity,
-            isCommute: activity.commute,
-            gearId: activity.gear_id,
+            isCommute: commute,
+            gearId: gear_id,
         });
     }
 

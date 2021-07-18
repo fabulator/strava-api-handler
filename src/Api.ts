@@ -192,7 +192,7 @@ export default class Api extends ApiBase<ApiResponseType<any>> {
         externalId: string | number,
         dataType = 'gpx',
     ): Promise<UploadStatus> {
-        const body = (Api.convertData(
+        const body = Api.convertData(
             {
                 data_type: dataType,
                 ...(activity.getTitle() != null ? { name: activity.getTitle() } : {}),
@@ -200,7 +200,7 @@ export default class Api extends ApiBase<ApiResponseType<any>> {
                 ...(activity.isCommute != null ? { commute: activity.isCommute ? 1 : 0 } : {}),
             },
             Api.FORMATS.FORM_DATA,
-        ) as any) as FormData;
+        ) as any as FormData;
 
         body.append('file', fileContent, {
             filename: `${externalId}.${dataType}`,
