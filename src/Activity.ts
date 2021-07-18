@@ -1,6 +1,6 @@
 import { Workout, WorkoutConstructor } from 'fitness-models';
 import { DateTime, Duration } from 'luxon';
-import { unit } from './helpers';
+import { unit } from 'mathjs';
 import { ApiActivity } from './types/api/Activity';
 
 interface Constructor<Id, ApiSource> extends WorkoutConstructor {
