@@ -1,6 +1,18 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## v5.0.0 (2021-07-18)
+### Fixed
+- [04b82bf](https://github.com/fabulator/strava-api-handler/commit/04b82bfdd9e2002d4b7fd4eb9413c5c516f84639) mathjs dependency
+
+### Changed
+- [6c76648](https://github.com/fabulator/strava-api-handler/commit/6c7664896b33904d31714170773ab8fbb87d4744) Update dependency mathjs to v9 BREAKING (#141)
+
+Co-authored-by: Renovate Bot <bot@renovateapp.com>
+- [7886673](https://github.com/fabulator/strava-api-handler/commit/7886673d43cd9bc59ad476884359124a9acf9ad2) Update dependency form-data to v4 BREAKING (#150)
+
+Co-authored-by: Renovate Bot <bot@renovateapp.com>
+
 ## v4.4.70 (2021-05-03)
 ### Fixed
 - [d1adcb6](https://github.com/fabulator/strava-api-handler/commit/d1adcb639576d9d9cec8c2d05b5ae0e3b6b4d989) Update lock for security updated
