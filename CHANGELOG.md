@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## v5.0.1 (2021-07-18)
+### Fixed
+- [3c2a257](https://github.com/fabulator/strava-api-handler/commit/3c2a25740a180f3450cc56727e4de72b1462f0f5) Update dependencies
+
 ## v5.0.0 (2021-07-18)
 ### Fixed
 - [04b82bf](https://github.com/fabulator/strava-api-handler/commit/04b82bfdd9e2002d4b7fd4eb9413c5c516f84639) mathjs dependency
