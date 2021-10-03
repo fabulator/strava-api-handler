@@ -13,6 +13,7 @@ global.FormData = FormData;
 
 type Scope = 'read' | 'read_all' | 'profile:read_all' | 'profile:write' | 'activity:read' | 'activity:read_all' | 'activity:write';
 type Prompt = 'force' | 'auto';
+
 interface Athlete {
     badge_type_id: number;
     city: string;
@@ -231,9 +232,13 @@ export default class Api extends ApiBase<ApiResponseType<any>> {
         return Activity.getFromApi(data);
     }
 
-    // eslint-disable-next-line complexity
     public async updateActivity(activity: Activity<number>): Promise<Activity> {
         const { data } = await this.put(`api/v3/activities/${activity.getId()}`, activity.toApiObject());
         return Activity.getFromApi(data);
+    }
+
+    public async updateWeight(weight: number): Promise<Athlete> {
+        const { data } = await this.put('api/v3/athlete', { weight });
+        return data;
     }
 }
