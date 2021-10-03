@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## v5.1.0 (2021-10-03)
+### Changed
+- [ffb4ae3](https://github.com/fabulator/strava-api-handler/commit/ffb4ae394e8df3b55dca3e647a3c4c4b354139cd) Add weight tracking
+
 ## v5.0.5 (2021-07-26)
 ### Fixed
 - [3c172d3](https://github.com/fabulator/strava-api-handler/commit/3c172d330b2e60832ac78d5f673797795b517d29) Update lock for security updated
