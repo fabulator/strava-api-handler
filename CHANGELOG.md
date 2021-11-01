@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## v5.1.5 (2021-11-01)
+### Fixed
+- [1c80fd7](https://github.com/fabulator/strava-api-handler/commit/1c80fd75990627c74341c04103fe32f17c2e961c) Update lock for security updated
+
 ## v5.1.4 (2021-10-25)
 ### Fixed
 - [f8226b9](https://github.com/fabulator/strava-api-handler/commit/f8226b97202af9ae4d6c2e4f3a63947637e90eae) Update lock for security updated
