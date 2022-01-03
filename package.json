@@ -1,6 +1,6 @@
 {
   "name": "strava-api-handler",
-  "version": "5.1.15",
+  "version": "5.1.16",
   "description": "Unofficial handler for Strava API",
   "keywords": [
     "strava",
