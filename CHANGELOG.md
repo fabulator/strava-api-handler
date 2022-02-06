@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## v5.2.0 (2022-02-06)
+### Changed
+- [625733f](https://github.com/fabulator/strava-api-handler/commit/625733ff9a1facca0076eeaef34c07cb7076bd49) Update dependency ansi-regex to 5.0.1 [SECURITY]
+
 ## v5.1.20 (2022-01-31)
 ### Fixed
 - [c9c2cef](https://github.com/fabulator/strava-api-handler/commit/c9c2cefe991672ec9f0ef613a9e0c1e8052b72e9) Update lock for security updated
