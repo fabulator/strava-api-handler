@@ -1,6 +1,12 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## v5.3.0 (2022-02-06)
+### Changed
+- [dfb58fb](https://github.com/fabulator/strava-api-handler/commit/dfb58fb25c60f9dad2c49cb266b24b7e6efe66e3) Update dependency json-schema to 0.4.0 [SECURITY] (#197)
+
+Co-authored-by: Renovate Bot <bot@renovateapp.com>
+
 ## v5.2.0 (2022-02-06)
 ### Changed
 - [625733f](https://github.com/fabulator/strava-api-handler/commit/625733ff9a1facca0076eeaef34c07cb7076bd49) Update dependency ansi-regex to 5.0.1 [SECURITY]
