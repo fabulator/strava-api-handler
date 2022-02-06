@@ -1,6 +1,12 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## v6.0.0 (2022-02-06)
+### Changed
+- [fce99e6](https://github.com/fabulator/strava-api-handler/commit/fce99e6d95c02d7fa6613350f18ac6849f322669) Update dependency mathjs to v10 BREAKING (#179)
+
+Co-authored-by: Renovate Bot <bot@renovateapp.com>
+
 ## v5.3.0 (2022-02-06)
 ### Changed
 - [dfb58fb](https://github.com/fabulator/strava-api-handler/commit/dfb58fb25c60f9dad2c49cb266b24b7e6efe66e3) Update dependency json-schema to 0.4.0 [SECURITY] (#197)
