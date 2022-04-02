@@ -33,7 +33,7 @@
   "dependencies": {
     "@types/luxon": "^2.0.4",
     "cookie-api-handler": "^2.24.5",
-    "fitness-models": "^4.2.0",
+    "fitness-models": "^6.0.0",
     "form-data": "^4.0.0",
     "luxon": "^2.0.2",
     "mathjs": "^10.1.1",
