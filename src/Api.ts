@@ -82,6 +82,7 @@ export default class Api extends ApiBase<ApiResponseType<any>> {
         return this.accessToken;
     }
 
+    // eslint-disable-next-line default-param-last
     public getLoginUrl(redirectUri: string, scope: Scope[] = ['read'], approvalPrompt?: Prompt, state?: string): string {
         const parameters = {
             client_id: this.clientId,
@@ -161,6 +162,7 @@ export default class Api extends ApiBase<ApiResponseType<any>> {
     }
 
     public async processActivities(
+        // eslint-disable-next-line default-param-last
         filter: ActivityFilters = {},
         processor: (workout: Activity<number, ApiActivity>) => Promise<Activity<number, ApiActivity>>,
     ): Promise<Activity<number, ApiActivity>[]> {
