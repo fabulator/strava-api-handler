@@ -1,6 +1,21 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## v7.0.0 (2022-04-02)
+### Changed
+- [ef0c622](https://github.com/fabulator/strava-api-handler/commit/ef0c6220056206df16d031ca93eabec66e59a7b9) Update dependency fitness-models to v6 BREAKING (#200)
+
+Co-authored-by: Renovate Bot <bot@renovateapp.com>
+- [f91087c](https://github.com/fabulator/strava-api-handler/commit/f91087c732256c5eae7740ce0983f082d3e31407) Update actions/checkout action to v3 (#202)  
+
+Co-authored-by: Renovate Bot <bot@renovateapp.com>
+- [f19ec5e](https://github.com/fabulator/strava-api-handler/commit/f19ec5e90c3ccc31a84cfe6b6cee0ef5ae001080) Update actions/setup-node action to v3 (#201)  
+
+Co-authored-by: Renovate Bot <bot@renovateapp.com>
+- [a5a6ece](https://github.com/fabulator/strava-api-handler/commit/a5a6ece850c55d5389923340c00e52093ad32b36) Update dev dependency commitlint-config-fabulator to v3  (#199)
+
+Co-authored-by: Renovate Bot <bot@renovateapp.com>
+
 ## v6.0.0 (2022-02-06)
 ### Changed
 - [fce99e6](https://github.com/fabulator/strava-api-handler/commit/fce99e6d95c02d7fa6613350f18ac6849f322669) Update dependency mathjs to v10 BREAKING (#179)
