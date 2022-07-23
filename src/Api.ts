@@ -149,7 +149,7 @@ export default class Api extends ApiBase<ApiResponseType<any>> {
     public async getActivities(parameters: ActivityFilters) {
         const { after, before } = parameters;
         const { data } = await this.get(
-            `api/v3/athlete/activities/${ApiBase.convertParametersToUrl({
+            `api/v3/athlete/activities${ApiBase.convertParametersToUrl({
                 ...parameters,
                 ...(after ? { after: typeof after === 'number' ? after : after.valueOf() / 1000 } : {}),
                 ...(before ? { before: typeof before === 'number' ? before : before.valueOf() / 1000 } : {}),
