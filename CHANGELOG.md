@@ -1,6 +1,13 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## v7.1.0 (2022-08-02)
+### Fixed
+- [a0482f6](https://github.com/fabulator/strava-api-handler/commit/a0482f6317d14651112b193cadeedcb44acfadaf) Remove unnecessary slash causing CORS errors (#210)
+
+### Changed
+- [b9c34d7](https://github.com/fabulator/strava-api-handler/commit/b9c34d7d8fac664c7b32785976e215e8ffb92057) Bump dependencies 
+
 ## v7.0.0 (2022-04-02)
 ### Changed
 - [ef0c622](https://github.com/fabulator/strava-api-handler/commit/ef0c6220056206df16d031ca93eabec66e59a7b9) Update dependency fitness-models to v6 BREAKING (#200)
