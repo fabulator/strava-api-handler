@@ -1,6 +1,15 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## v8.0.0 (2022-08-13)
+### Changed
+- [eafdf9a](https://github.com/fabulator/strava-api-handler/commit/eafdf9ac4b8ccb8c07022832d84042cb07b9a628) Update dependency luxon to v3 BREAKING (#211)
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+- [dfe2dcf](https://github.com/fabulator/strava-api-handler/commit/dfe2dcfdf3f1424a487937eda471b979cc9f2a7d) Update dev dependency husky to v8  (#209)
+
+Co-authored-by: Renovate Bot <bot@renovateapp.com>
+
 ## v7.1.0 (2022-08-02)
 ### Fixed
 - [a0482f6](https://github.com/fabulator/strava-api-handler/commit/a0482f6317d14651112b193cadeedcb44acfadaf) Remove unnecessary slash causing CORS errors (#210)
