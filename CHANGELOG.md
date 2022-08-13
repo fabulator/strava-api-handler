@@ -1,6 +1,12 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## v9.0.0 (2022-08-13)
+### Changed
+- [0a60231](https://github.com/fabulator/strava-api-handler/commit/0a602319e2fc4bbef3533fa6c9d13c731db05425) Update dependency mathjs to v11 BREAKING (#212)
+
+Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
 ## v8.0.0 (2022-08-13)
 ### Changed
 - [eafdf9a](https://github.com/fabulator/strava-api-handler/commit/eafdf9ac4b8ccb8c07022832d84042cb07b9a628) Update dependency luxon to v3 BREAKING (#211)
