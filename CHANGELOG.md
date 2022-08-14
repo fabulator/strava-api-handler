@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## v9.0.1 (2022-08-14)
+### Fixed
+- [ab5ca61](https://github.com/fabulator/strava-api-handler/commit/ab5ca6185f862fcb10875ff0ab0caf945048f42f) Interface of token
+
 ## v9.0.0 (2022-08-13)
 ### Changed
 - [0a60231](https://github.com/fabulator/strava-api-handler/commit/0a602319e2fc4bbef3533fa6c9d13c731db05425) Update dependency mathjs to v11 BREAKING (#212)
