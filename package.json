@@ -36,7 +36,7 @@
     "fitness-models": "^8.1.0",
     "form-data": "^4.0.0",
     "luxon": "^3.0.1",
-    "mathjs": "^11.0.1",
+    "mathjs": "^12.4.1",
     "rest-api-handler": "^2.22.18"
   },
   "devDependencies": {
